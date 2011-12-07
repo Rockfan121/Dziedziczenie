@@ -5,9 +5,12 @@ public class Figura
 	
 	public static void main(String[] args) 
 	{
-		Figura a = new Kolo (new Punkt )
-		a
-		b = new Prostokat 
+		Figura a = new Kolo(new Punkt(1d, 1d), 1d);
+		a.rysuj();
+		a = new Prostokat(new Punkt(-1d, -1d), new Punkt(1d, 1d));
+		a.rysuj();
+		//a = new Kwadrat (new Punkt(-1d, -1d), new Punkt(1d, 1d));
+		//a.rysuj();
 	}
 	
 }
