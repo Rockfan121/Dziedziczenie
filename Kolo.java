@@ -1,20 +1,26 @@
-public class Kolo extends Figura
+public class Kolo extends Figura implements Comparable<Kolo> //impelments
 {
-	private double x;
-	private double y;
-	private double z;
-	
-	Kolo (double x, double y, double z)
+	private Punkt o;
+	private double r;
+
+	Kolo(Punkt o, double r)
 	{
-		this.x = x;
-		this.y = y;
-		this.z = z;
-		
+	this.o = o;
+	this.r = r;
 	}
-	
+
 	@Override
 	public void rysuj()
 	{
-		System.out.println('Rysujemy kolo o srodku:' + d +)
+	System.out.println("Rysujemy kolo w srodku " + o + " i promieniu r - " + r);
 	}
+
+	@Override
+	public int compareTo(Kolo o) 
+	{
+	return (int)(o.r - r);
+	}
+	
+	
+	
 }
